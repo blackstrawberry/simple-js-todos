@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeeklyPlaner</title>
+  <link rel="stylesheet" href="./css/main.css"/>
+</head>
+<body>
+  <header>
+    <div class="title">Weekly To-Do list</div>
+  </header>
+  <main>
+    <form class="input-data">
+      <input type="text" placeholder="할 일을 입력해 주세요."/>
+      <button>입력</button>
+    </form>
+    <div class="tab-wrapper">
+      <div class="tab-menu">
+        <ul>
+          <li class="tab1 active">Mon</li>
+          <li class="tab2">Tue</li>
+          <li class="tab3">Wen</li>
+          <li class="tab4">Thu</li>
+          <li class="tab5">Fri</li>
+          <li class="tab6">Sat</li>
+          <li class="tab7">Sun</li>
+        </ul>
+      </div>
+      <div class="tab-body">
+        <div class="mon active-content"><ul></ul></div>
+        <div class="tue"><ul></ul></div>
+        <div class="wen"><ul></ul></div>
+        <div class="thu"><ul></ul></div>
+        <div class="fri"><ul></ul></div>
+        <div class="sat"><ul></ul></div>
+        <div class="sun"><ul></ul></div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="project-name">FirstWebProject</div>
+    <div class="detail">team : BKS</div>
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
+</html>
