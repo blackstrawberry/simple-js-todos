@@ -1,4 +1,5 @@
 body {
+  background-color: #000;
   padding: 0;
   margin: 0;
 }
@@ -11,5 +12,201 @@ body ul, body ol {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+header {
+  background-color: black;
+  border-bottom: 1px solid #351f67;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 91px;
+}
+
+header span {
+  color: #ffff;
+}
+
+header .header-left {
+  margin-top: 15px;
+  margin-left: 60px;
+  position: relative;
+}
+
+header .header-left .left-top {
+  position: absolute;
+  left: 0;
+}
+
+header .header-left .left-top span {
+  color: #888;
+  font-size: 0.8rem;
+  margin-right: 30px;
+}
+
+header .header-left .left-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 10px 0;
+}
+
+header .header-left .left-bottom span {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 36px;
+  margin: 0 30px;
+}
+
+header .header-hamburger {
+  background-image: url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-sitemap-white.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 36px;
+  height: 36px;
+}
+
+header .header-search {
+  background-image: url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-search-white.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 36px;
+  height: 36px;
+  margin-right: 45px;
+}
+
+header .header-login {
+  background-image: url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-mymega-white.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 36px;
+  height: 36px;
+}
+
+header .header-calendar {
+  background-image: url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-schedule-white.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 36px;
+  height: 36px;
+  margin-left: 45px;
+}
+
+header .header-right {
+  margin-top: 15px;
+  margin-right: 60px;
+  position: relative;
+}
+
+header .header-right .right-top {
+  position: absolute;
+  right: 0;
+}
+
+header .header-right .right-top span {
+  color: #888;
+  font-size: 0.8rem;
+  margin-left: 30px;
+}
+
+header .header-right .right-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 10px 0;
+}
+
+header .header-right .right-bottom span {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 36px;
+  margin: 0 30px;
+}
+
+header .logo {
+  margin-top: 23px;
+  background-image: url("https://img.megabox.co.kr/static/pc/images/common/ci/logo-white_new2.png");
+  background-repeat: no-repeat;
+  height: 47px;
+  width: 140px;
+}
+
+main .box-office-wrap {
+  margin: 100px 60px 0 60px;
+  height: 800px;
+  color: #ffff;
+}
+
+main .box-office-wrap .box-header {
+  position: relative;
+}
+
+main .box-office-wrap .box-header .box-title {
+  text-align: center;
+  font-size: 17px;
+  position: relative;
+}
+
+main .box-office-wrap .box-header .box-title::after {
+  content: "";
+  width: 68px;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 300%);
+          transform: translate(-50%, 300%);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+main .box-office-wrap .box-header .more-movies {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #aaa;
+  right: 0;
+  top: 0;
+}
+
+main .box-office-wrap .box-header .plus-icon {
+  background-image: url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-more-cross-gray.png");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+
+main .box-office-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+}
+
+main::before {
+  background-image: url("https://img.megabox.co.kr/SharedImg/2022/05/23/ZtL7FQSQhJA1auFMd8TUSORfYq9DBG6W_380.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: blur(25px);
+          filter: blur(25px);
+  opacity: 0.2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  content: "";
 }
 /*# sourceMappingURL=movie.css.map */

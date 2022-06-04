@@ -1,10 +1,7 @@
-
 // 삭제 기능
-
 function deleteToDo(event){
   event.target.parentElement.remove();
 }
-
 // 삭제 기능 끝
 
 // 탭 기능
@@ -29,7 +26,6 @@ let getInput = document.querySelector('input');
 function handleInput(event){
   event.preventDefault();
   if(getInput.value == ""){return};
-  console.log(getInput.value);
   let box = document.createElement('li');
   let text = document.createTextNode(getInput.value);
   box.appendChild(text);
@@ -43,12 +39,3 @@ function handleInput(event){
 }
 document.querySelector("form").addEventListener("submit", handleInput);
 // 입력 기능 끝
-
-
-// 삭제 기능
-
-function deleteToDo(event){
-  event.target.parentElement.remove();
-}
-
-// 삭제 기능 끝
