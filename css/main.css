@@ -67,8 +67,23 @@ main .tab-wrapper .tab-body div.active-content {
   display: block;
 }
 
+main .tab-wrapper .tab-body div.active-content ul {
+  padding: 30px 40px;
+  margin: 0;
+}
+
 main .tab-wrapper .tab-body div.active-content ul li {
   font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .tab-wrapper .tab-body div.active-content ul li a {
+  cursor: pointer;
 }
 
 main .tab-wrapper .tab-body :not(.active-content) ul {

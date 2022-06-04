@@ -55,8 +55,15 @@ main{
       border: 2px solid #000;
       display:block;
       ul{
+        padding : 30px 40px;
+        margin : 0;
         li{
           font-size: 50px;
+          display: flex;
+          justify-content:space-between;
+          a{
+            cursor: pointer;
+          }
         }
       }
     }:not(.active-content){
