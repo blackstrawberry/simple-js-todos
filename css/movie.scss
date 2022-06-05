@@ -23,7 +23,7 @@ header{
   }
   .header-left{
     margin-top: 15px;
-    margin-left: 60px;
+    margin-left: 150px;
     position: relative;
     .left-top{
       position: absolute;
@@ -79,7 +79,7 @@ header{
 
   .header-right{
     margin-top: 15px;
-    margin-right: 60px;
+    margin-right: 150px;
     position: relative;
     .right-top{
       position: absolute;
@@ -113,13 +113,14 @@ header{
 
 main{
   .box-office-wrap{
-    margin: 100px 60px 0 60px;
+    margin: 100px 150px 0 150px;
     height: 800px;
     color: #ffff;
     .box-header{
       position: relative;
       .box-title{
         text-align: center;
+        transform: translate(-1.5%,0);
         font-size: 17px;
         position: relative;
       }
@@ -137,7 +138,7 @@ main{
         position: absolute;
         display: flex;
         color: #aaa;
-        right:0;
+        right:30px;
         top: 0;
       }
       .plus-icon{
@@ -146,6 +147,15 @@ main{
         width: 16px;
         height: 16px;
         margin-left: 5px;
+      }
+    }
+    .box-movies{
+      display: flex;
+      justify-content: space-around;
+      padding-top: 40px;
+      transform: translate(-1.2%, 0);
+      img{
+        width: 245px;
       }
     }
   }

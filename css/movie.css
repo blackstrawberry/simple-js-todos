@@ -32,7 +32,7 @@ header span {
 
 header .header-left {
   margin-top: 15px;
-  margin-left: 60px;
+  margin-left: 150px;
   position: relative;
 }
 
@@ -97,7 +97,7 @@ header .header-calendar {
 
 header .header-right {
   margin-top: 15px;
-  margin-right: 60px;
+  margin-right: 150px;
   position: relative;
 }
 
@@ -135,7 +135,7 @@ header .logo {
 }
 
 main .box-office-wrap {
-  margin: 100px 60px 0 60px;
+  margin: 100px 150px 0 150px;
   height: 800px;
   color: #ffff;
 }
@@ -146,6 +146,8 @@ main .box-office-wrap .box-header {
 
 main .box-office-wrap .box-header .box-title {
   text-align: center;
+  -webkit-transform: translate(-1.5%, 0);
+          transform: translate(-1.5%, 0);
   font-size: 17px;
   position: relative;
 }
@@ -168,7 +170,7 @@ main .box-office-wrap .box-header .more-movies {
   display: -ms-flexbox;
   display: flex;
   color: #aaa;
-  right: 0;
+  right: 30px;
   top: 0;
 }
 
@@ -178,6 +180,21 @@ main .box-office-wrap .box-header .plus-icon {
   width: 16px;
   height: 16px;
   margin-left: 5px;
+}
+
+main .box-office-wrap .box-movies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 40px;
+  -webkit-transform: translate(-1.2%, 0);
+          transform: translate(-1.2%, 0);
+}
+
+main .box-office-wrap .box-movies img {
+  width: 245px;
 }
 
 main .box-office-wrap::before {
