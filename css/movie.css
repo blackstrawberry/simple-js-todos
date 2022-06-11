@@ -15,8 +15,13 @@ body ul, body ol {
 }
 
 header {
-  background-color: black;
   border-bottom: 1px solid #351f67;
+  background-color: black;
+}
+
+header .header-wrap {
+  margin: 0 auto;
+  width: 1100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,42 +31,43 @@ header {
   height: 91px;
 }
 
-header span {
+header .header-wrap span {
   color: #ffff;
 }
 
-header .header-left {
+header .header-wrap .header-left {
   margin-top: 15px;
-  margin-left: 150px;
+  margin-left: 0px;
   position: relative;
 }
 
-header .header-left .left-top {
+header .header-wrap .header-left .left-top {
   position: absolute;
   left: 0;
 }
 
-header .header-left .left-top span {
+header .header-wrap .header-left .left-top span {
   color: #888;
   font-size: 0.8rem;
   margin-right: 30px;
 }
 
-header .header-left .left-bottom {
+header .header-wrap .header-left .left-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 30px 10px 0;
 }
 
-header .header-left .left-bottom span {
+header .header-wrap .header-left .left-bottom span {
   display: inline-block;
   font-size: 20px;
   line-height: 36px;
   margin: 0 30px;
+  min-width: 52px;
 }
 
-header .header-hamburger {
+header .header-wrap .header-hamburger {
   background-image: url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-sitemap-white.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -69,7 +75,7 @@ header .header-hamburger {
   height: 36px;
 }
 
-header .header-search {
+header .header-wrap .header-search {
   background-image: url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-search-white.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -78,7 +84,7 @@ header .header-search {
   margin-right: 45px;
 }
 
-header .header-login {
+header .header-wrap .header-login {
   background-image: url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-mymega-white.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -86,7 +92,7 @@ header .header-login {
   height: 36px;
 }
 
-header .header-calendar {
+header .header-wrap .header-calendar {
   background-image: url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-schedule-white.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -95,47 +101,51 @@ header .header-calendar {
   margin-left: 45px;
 }
 
-header .header-right {
+header .header-wrap .header-right {
   margin-top: 15px;
-  margin-right: 150px;
+  margin-right: 0px;
   position: relative;
 }
 
-header .header-right .right-top {
+header .header-wrap .header-right .right-top {
   position: absolute;
   right: 0;
 }
 
-header .header-right .right-top span {
+header .header-wrap .header-right .right-top span {
   color: #888;
   font-size: 0.8rem;
   margin-left: 30px;
 }
 
-header .header-right .right-bottom {
+header .header-wrap .header-right .right-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 30px 10px 0;
 }
 
-header .header-right .right-bottom span {
+header .header-wrap .header-right .right-bottom span {
   display: inline-block;
   font-size: 20px;
   line-height: 36px;
   margin: 0 30px;
+  min-width: 52px;
 }
 
-header .logo {
+header .header-wrap .logo {
   margin-top: 23px;
   background-image: url("https://img.megabox.co.kr/static/pc/images/common/ci/logo-white_new2.png");
   background-repeat: no-repeat;
   height: 47px;
   width: 140px;
+  min-width: 140px;
 }
 
 main .box-office-wrap {
-  margin: 100px 150px 0 150px;
+  width: 1100px;
+  margin: 80px auto 200px auto;
+  padding-bottom: 100px;
   height: 800px;
   color: #ffff;
 }
@@ -146,8 +156,6 @@ main .box-office-wrap .box-header {
 
 main .box-office-wrap .box-header .box-title {
   text-align: center;
-  -webkit-transform: translate(-1.5%, 0);
-          transform: translate(-1.5%, 0);
   font-size: 17px;
   position: relative;
 }
@@ -186,15 +194,474 @@ main .box-office-wrap .box-movies {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 40px;
-  -webkit-transform: translate(-1.2%, 0);
-          transform: translate(-1.2%, 0);
+  height: 398px;
 }
 
-main .box-office-wrap .box-movies img {
+main .box-office-wrap .box-movies .movie_1 {
+  position: relative;
   width: 245px;
+  height: 398px;
+}
+
+main .box-office-wrap .box-movies .movie_1 .image-wrap {
+  position: relative;
+}
+
+main .box-office-wrap .box-movies .movie_1 .image-wrap .description {
+  display: none;
+}
+
+main .box-office-wrap .box-movies .movie_1 .image-wrap .chartNum {
+  position: absolute;
+  left: 5px;
+  top: 0;
+  display: block;
+  font-style: italic;
+  font-size: 30px;
+  margin: 10px 0 0 15px;
+  text-shadow: 2px 2px 6px #000;
+}
+
+main .box-office-wrap .box-movies .movie_1 .image-wrap img {
+  position: absolute;
+  z-index: -1;
+  width: 245px;
+  height: 352px;
+}
+
+main .box-office-wrap .box-movies .movie_1:hover .description {
+  display: block;
+  position: absolute;
+  width: 245px;
+  height: 352px;
+  top: 0;
+  left: 0;
+}
+
+main .box-office-wrap .box-movies .movie_1:hover .chartNum {
+  display: none;
+}
+
+main .box-office-wrap .box-movies .movie_1 .button-wrap {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 36px;
+}
+
+main .box-office-wrap .box-movies .movie_1 .button-wrap .like-button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 3px;
+  width: 74px;
+  height: 36px;
+  border: 1px solid #555;
+}
+
+main .box-office-wrap .box-movies .movie_1 .button-wrap .like-button .heart {
+  background-image: url("https://www.megabox.co.kr/static/pc/images/common/ico/ico-heart-toggle-main.png");
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 15px;
+  margin: auto 4px auto 0;
+}
+
+main .box-office-wrap .box-movies .movie_1 .button-wrap .like-button p {
+  margin: 0;
+  padding: 0;
+  line-height: 36px;
+}
+
+main .box-office-wrap .box-movies .movie_1 .button-wrap .buy-ticket-button {
+  margin: 0 3px;
+  width: 154px;
+  height: 36px;
+  border: 1px solid #037B94;
+  background-color: #307B94;
+  color: #ffff;
+  line-height: 36px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main .box-office-wrap .box-movies .movie_2 {
+  position: relative;
+  width: 245px;
+  height: 398px;
+}
+
+main .box-office-wrap .box-movies .movie_2 .image-wrap {
+  position: relative;
+}
+
+main .box-office-wrap .box-movies .movie_2 .image-wrap .description {
+  display: none;
+}
+
+main .box-office-wrap .box-movies .movie_2 .image-wrap .chartNum {
+  position: absolute;
+  left: 5px;
+  top: 0;
+  display: block;
+  font-style: italic;
+  font-size: 30px;
+  margin: 10px 0 0 15px;
+  text-shadow: 2px 2px 6px #000;
+}
+
+main .box-office-wrap .box-movies .movie_2 .image-wrap img {
+  position: absolute;
+  z-index: -1;
+  width: 245px;
+  height: 352px;
+}
+
+main .box-office-wrap .box-movies .movie_2:hover .description {
+  display: block;
+  position: absolute;
+  width: 245px;
+  height: 352px;
+  top: 0;
+  left: 0;
+}
+
+main .box-office-wrap .box-movies .movie_2:hover .chartNum {
+  display: none;
+}
+
+main .box-office-wrap .box-movies .movie_2 .button-wrap {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 36px;
+}
+
+main .box-office-wrap .box-movies .movie_2 .button-wrap .like-button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 3px;
+  width: 74px;
+  height: 36px;
+  border: 1px solid #555;
+}
+
+main .box-office-wrap .box-movies .movie_2 .button-wrap .like-button .heart {
+  background-image: url("https://www.megabox.co.kr/static/pc/images/common/ico/ico-heart-toggle-main.png");
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 15px;
+  margin: auto 4px auto 0;
+}
+
+main .box-office-wrap .box-movies .movie_2 .button-wrap .like-button p {
+  margin: 0;
+  padding: 0;
+  line-height: 36px;
+}
+
+main .box-office-wrap .box-movies .movie_2 .button-wrap .buy-ticket-button {
+  margin: 0 3px;
+  width: 154px;
+  height: 36px;
+  border: 1px solid #037B94;
+  background-color: #307B94;
+  color: #ffff;
+  line-height: 36px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main .box-office-wrap .box-movies .movie_3 {
+  position: relative;
+  width: 245px;
+  height: 398px;
+}
+
+main .box-office-wrap .box-movies .movie_3 .image-wrap {
+  position: relative;
+}
+
+main .box-office-wrap .box-movies .movie_3 .image-wrap .description {
+  display: none;
+}
+
+main .box-office-wrap .box-movies .movie_3 .image-wrap .chartNum {
+  position: absolute;
+  left: 5px;
+  top: 0;
+  display: block;
+  font-style: italic;
+  font-size: 30px;
+  margin: 10px 0 0 15px;
+  text-shadow: 2px 2px 6px #000;
+}
+
+main .box-office-wrap .box-movies .movie_3 .image-wrap img {
+  position: absolute;
+  z-index: -1;
+  width: 245px;
+  height: 352px;
+}
+
+main .box-office-wrap .box-movies .movie_3:hover .description {
+  display: block;
+  position: absolute;
+  width: 245px;
+  height: 352px;
+  top: 0;
+  left: 0;
+}
+
+main .box-office-wrap .box-movies .movie_3:hover .chartNum {
+  display: none;
+}
+
+main .box-office-wrap .box-movies .movie_3 .button-wrap {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 36px;
+}
+
+main .box-office-wrap .box-movies .movie_3 .button-wrap .like-button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 3px;
+  width: 74px;
+  height: 36px;
+  border: 1px solid #555;
+}
+
+main .box-office-wrap .box-movies .movie_3 .button-wrap .like-button .heart {
+  background-image: url("https://www.megabox.co.kr/static/pc/images/common/ico/ico-heart-toggle-main.png");
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 15px;
+  margin: auto 4px auto 0;
+}
+
+main .box-office-wrap .box-movies .movie_3 .button-wrap .like-button p {
+  margin: 0;
+  padding: 0;
+  line-height: 36px;
+}
+
+main .box-office-wrap .box-movies .movie_3 .button-wrap .buy-ticket-button {
+  margin: 0 3px;
+  width: 154px;
+  height: 36px;
+  border: 1px solid #037B94;
+  background-color: #307B94;
+  color: #ffff;
+  line-height: 36px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main .box-office-wrap .box-movies .movie_4 {
+  position: relative;
+  width: 245px;
+  height: 398px;
+}
+
+main .box-office-wrap .box-movies .movie_4 .image-wrap {
+  position: relative;
+}
+
+main .box-office-wrap .box-movies .movie_4 .image-wrap .description {
+  display: none;
+}
+
+main .box-office-wrap .box-movies .movie_4 .image-wrap .chartNum {
+  position: absolute;
+  left: 5px;
+  top: 0;
+  display: block;
+  font-style: italic;
+  font-size: 30px;
+  margin: 10px 0 0 15px;
+  text-shadow: 2px 2px 6px #000;
+}
+
+main .box-office-wrap .box-movies .movie_4 .image-wrap img {
+  position: absolute;
+  z-index: -1;
+  width: 245px;
+  height: 352px;
+}
+
+main .box-office-wrap .box-movies .movie_4:hover .description {
+  display: block;
+  position: absolute;
+  width: 245px;
+  height: 352px;
+  top: 0;
+  left: 0;
+}
+
+main .box-office-wrap .box-movies .movie_4:hover .chartNum {
+  display: none;
+}
+
+main .box-office-wrap .box-movies .movie_4 .button-wrap {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 36px;
+}
+
+main .box-office-wrap .box-movies .movie_4 .button-wrap .like-button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 3px;
+  width: 74px;
+  height: 36px;
+  border: 1px solid #555;
+}
+
+main .box-office-wrap .box-movies .movie_4 .button-wrap .like-button .heart {
+  background-image: url("https://www.megabox.co.kr/static/pc/images/common/ico/ico-heart-toggle-main.png");
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 15px;
+  margin: auto 4px auto 0;
+}
+
+main .box-office-wrap .box-movies .movie_4 .button-wrap .like-button p {
+  margin: 0;
+  padding: 0;
+  line-height: 36px;
+}
+
+main .box-office-wrap .box-movies .movie_4 .button-wrap .buy-ticket-button {
+  margin: 0 3px;
+  width: 154px;
+  height: 36px;
+  border: 1px solid #037B94;
+  background-color: #307B94;
+  color: #ffff;
+  line-height: 36px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main .box-office-wrap .box-footer {
+  border-radius: 3px;
+  text-align: center;
+  bottom: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1100px;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.02);
+  margin: 50px 0 0 0;
+  padding: 0 0 0 0;
+}
+
+main .box-office-wrap .box-footer div {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto 0;
+}
+
+main .box-office-wrap .box-footer div p {
+  margin: 0;
+  line-height: 26px;
+}
+
+main .box-office-wrap .box-footer div .calendar-icon {
+  background-image: url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-schedule-main.png");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 28px;
+  margin-right: 8px;
+}
+
+main .box-office-wrap .box-footer div .film-icon {
+  background-image: url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-boxoffice-main.png");
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 28px;
+  margin-right: 8px;
+}
+
+main .box-office-wrap .box-footer div .ticket-icon {
+  background-image: url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-quick-reserve-main.png");
+  background-repeat: no-repeat;
+  width: 29px;
+  height: 28px;
+  margin-right: 8px;
+}
+
+main .box-office-wrap .box-footer div:nth-of-type(1) input {
+  height: 29px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-bottom: 1px solid #d8d9db;
+  font-size: 1rem;
+  color: #d8d9db;
+}
+
+main .box-office-wrap .box-footer div:nth-of-type(1) input:focus {
+  outline: none;
+}
+
+main .box-office-wrap .box-footer div:nth-of-type(1) .search-icon {
+  background-image: url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-search-white.png");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 22px;
+  margin-top: 9px;
+  border-bottom: 1px solid #d8d9db;
+}
+
+main .box-office-wrap .box-footer div:not(:nth-of-type(1)) {
+  border-left: 1px solid #423e3e;
+}
+
+main .box-office-wrap .moving-mouse {
+  width: 1100;
+  height: 24;
 }
 
 main .box-office-wrap::before {
