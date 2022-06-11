@@ -198,9 +198,9 @@ header{
 main{
   .box-office-wrap{
     width: 1100px;
-    margin: 80px auto 200px auto;
-    padding-bottom: 100px;
-    height: 800px;
+    margin: 80px auto 0 auto;
+    padding-bottom: 0;
+    height: 700px;
     color: #ffff;
     .box-header{
       position: relative;
@@ -255,7 +255,7 @@ main{
       }
     }
     .box-footer{
-      border-radius: 3px;
+      border-radius: 5px;
       text-align: center;
       bottom: 50px;
       justify-content: center;
@@ -326,6 +326,28 @@ main{
     .moving-mouse{
       width: 1100;
       height: 24;
+      position: relative;
+    }
+    .moving-mouse::after{
+      margin-top: 50px;
+      background-image: url("../img/ico-mouse.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      content: "";
+      top: 10;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 16px;
+      height: 24px;
+      animation: moveAnim 1.5s forwards;
+      animation-iteration-count: infinite;
+    }
+    @keyframes moveAnim{
+      0%{top: 10px};
+      40%{top: 0px};
+      80%{top: 10px};
+      100%{top: 10px};
     }
   }
   .box-office-wrap::before{
