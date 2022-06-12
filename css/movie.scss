@@ -110,7 +110,7 @@ body{
     height: 36px;
     .like-button{
       .heart{
-        background-image:url("https://www.megabox.co.kr/static/pc/images/common/ico/ico-heart-toggle-main.png");
+        background-image:url("../img/ico-heart-toggle-main.png");
         background-repeat: no-repeat;
         width: 17px;
         height: 15px;
@@ -194,14 +194,14 @@ header{
       }
     }
     .header-hamburger{
-      background-image:url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-sitemap-white.png");
+      background-image:url("../img/ico-sitemap-white.png");
       background-repeat: no-repeat;
       background-position: center;
       width:36px;
       height:36px;
     }
     .header-search{
-      background-image:url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-search-white.png");
+      background-image:url("../img/ico-search-white.png");
       background-repeat: no-repeat;
       background-position: center;
       width:36px;
@@ -210,14 +210,14 @@ header{
     }
 
     .header-login{
-      background-image:url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-mymega-white.png");
+      background-image:url("../img/ico-mymega-white.png");
       background-repeat: no-repeat;
       background-position: center;
       width:36px;
       height:36px;
     }
     .header-calendar{
-      background-image:url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-schedule-white.png");
+      background-image:url("../img/ico-schedule-white.png");
       background-repeat: no-repeat;
       background-position: center;
       width:36px;
@@ -265,7 +265,7 @@ header{
     }
     .logo{
       margin-top: 23px;
-      background-image:url("https://img.megabox.co.kr/static/pc/images/common/ci/logo-white_new2.png");
+      background-image:url("../img/logo-white_new2.png");
       background-repeat: no-repeat;
       height: 47px;
       width: 140px;
@@ -315,7 +315,7 @@ main{
         }
       }
       .plus-icon{
-        background-image: url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-more-cross-gray.png");
+        background-image: url("../img/ico-more-cross-gray.png");
         background-repeat: no-repeat;
         width: 16px;
         height: 16px;
@@ -367,21 +367,21 @@ main{
           cursor:pointer;
         }
         .calendar-icon{
-          background-image: url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-schedule-main.png");
+          background-image: url("../img/ico-schedule-main.png");
           background-repeat: no-repeat;
           width: 24px;
           height: 28px;
           margin-right: 8px;
         }
         .film-icon{
-          background-image: url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-boxoffice-main.png");
+          background-image: url("../img/ico-boxoffice-main.png");
           background-repeat: no-repeat;
           width: 26px;
           height: 28px;
           margin-right: 8px;
         }
         .ticket-icon{
-          background-image: url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-quick-reserve-main.png");
+          background-image: url("../img/ico-quick-reserve-main.png");
           background-repeat: no-repeat;
           width: 29px;
           height: 28px;
@@ -460,7 +460,7 @@ main{
   }
 }
 main::before{
-  background-image:url("https://img.megabox.co.kr/SharedImg/2022/05/23/ZtL7FQSQhJA1auFMd8TUSORfYq9DBG6W_380.jpg");
+  background-image:url("../img/ZtL7FQSQhJA1auFMd8TUSORfYq9DBG6W_380.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   filter: blur(25px);
