@@ -362,7 +362,7 @@ main{
         p{
           margin: 0;
           line-height: 26px;
-        }:hover{
+        }:not(:first-child):hover{
           text-decoration: underline;
           cursor:pointer;
         }

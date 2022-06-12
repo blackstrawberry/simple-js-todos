@@ -900,7 +900,7 @@ main .box-office-wrap .box-footer div p {
   line-height: 26px;
 }
 
-main .box-office-wrap .box-footer div :hover {
+main .box-office-wrap .box-footer div :not(:first-child):hover {
   text-decoration: underline;
   cursor: pointer;
 }
