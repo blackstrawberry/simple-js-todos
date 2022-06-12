@@ -11,6 +11,16 @@ body{
     margin:0;
   }
 }
+@mixin header-hover-event{
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 30px;
+  height: 3px;
+}
 @mixin movieList {
   position:relative;
   width: 245px;
@@ -18,13 +28,63 @@ body{
   .image-wrap{
     position: relative;
     .description{
-      display: none;
+      position: relative;
+      transition: ease-in-out .2s;
+      opacity: 0;
+      background-color: rgba(0,0,0,0.8);
+      position:absolute;
+      width: 185px;
+      height: 292px;
+      top: 0;
+      left: 0;
+      padding: 30px;
+      .description-text{
+        /* 한 줄 자르기 */
+        display: inline-block;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        /* 여러 줄 자르기 추가 스타일 */
+        white-space: normal;
+        line-height: 1.2;
+        max-height: 8.4em;
+        text-align: left;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        word-break: break-all;
+      }
+      .grade{
+        position: absolute;
+        border-top: 1px solid #d8d9db;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        p:nth-of-type(1){
+          line-height: 36px;
+          width: 50px;
+          margin: auto 0;
+        }
+        p:nth-of-type(2){
+          font-size: 1.6em;
+          color:#59bec9;
+          line-height: 36px;
+          vertical-align: middle;
+        }
+
+      }
     }
     .chartNum{
+      opacity: 1;
       position: absolute;
       left: 5px;
       top: 0;
-      display: block;
       font-style: italic;
       font-size: 30px;
       margin: 10px 0 0 15px;
@@ -37,19 +97,12 @@ body{
       height: 352px;
     }
   }
-  &:hover{
+  &:hover {
     .description{
-      display: block;
-      position:absolute;
-      width: 245px;
-      height: 352px;
-      top: 0;
-      left: 0;
+      opacity: 1;
     }
-    .chartNum{
-      display: none;
-    }
-  } 
+  }
+  
   .button-wrap{
     position: absolute;
     bottom: 0;
@@ -112,6 +165,9 @@ header{
           color: #888;
           font-size: 0.8rem;
           margin-right: 30px;
+        }:hover{
+          text-decoration: underline;
+          cursor:pointer;
         }
       }
       .left-bottom{
@@ -123,6 +179,17 @@ header{
           line-height: 36px;
           margin: 0 30px;
           min-width: 52px;
+          position: relative;
+          text-align: center;
+        }
+        .head-movie:hover::after{
+          @include header-hover-event();
+        }
+        .head-buy:hover::after{
+          @include header-hover-event();
+        }
+        .head-theater:hover::after{
+          @include header-hover-event();
         }
       }
     }
@@ -169,6 +236,8 @@ header{
           color: #888;
           font-size: 0.8rem;
           margin-left: 30px;
+        }:hover{
+          text-decoration: underline;
         }
       }
       .right-bottom{
@@ -180,6 +249,17 @@ header{
           line-height: 36px;
           margin: 0 30px;
           min-width: 52px;
+          position: relative;
+          text-align: center;
+        }
+        .head-event:hover::after{
+          @include header-hover-event();
+        }
+        .head-store:hover::after{
+          @include header-hover-event();
+        }
+        .head-bonus:hover::after{
+          @include header-hover-event();
         }
       }
     }
@@ -192,6 +272,9 @@ header{
       min-width: 140px;
     }
   }
+}
+.movie-hover{
+  display: none;
 }
 
 
@@ -226,6 +309,10 @@ main{
         color: #aaa;
         right:30px;
         top: 0;
+        cursor: pointer;
+        &:hover{
+        text-decoration: underline;
+        }
       }
       .plus-icon{
         background-image: url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-more-cross-gray.png");
@@ -275,6 +362,9 @@ main{
         p{
           margin: 0;
           line-height: 26px;
+        }:hover{
+          text-decoration: underline;
+          cursor:pointer;
         }
         .calendar-icon{
           background-image: url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-schedule-main.png");
