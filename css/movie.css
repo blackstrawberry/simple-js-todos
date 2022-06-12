@@ -635,7 +635,7 @@ main .box-office-wrap .box-footer div .ticket-icon {
 
 main .box-office-wrap .box-footer div:nth-of-type(1) input {
   height: 29px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0);
   border: none;
   border-bottom: 1px solid #d8d9db;
   font-size: 1rem;
@@ -742,5 +742,9 @@ main::before {
   bottom: 0;
   z-index: -1;
   content: "";
+}
+
+input {
+  border-radius: none;
 }
 /*# sourceMappingURL=movie.css.map */
