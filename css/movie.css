@@ -653,7 +653,7 @@ main .box-office-wrap .box-footer div:nth-of-type(1) .input-wrap input:focus {
 }
 
 main .box-office-wrap .box-footer div:nth-of-type(1) .input-wrap .search-icon {
-  background-image: url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-search-white.png");
+  background-image: url("../img/ico-search-white.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 18px;
