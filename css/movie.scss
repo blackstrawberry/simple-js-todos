@@ -301,7 +301,7 @@ main{
       div:nth-of-type(1){
         input{
           height: 29px;
-          background-color: rgba(0,0,0,0.2);
+          background-color: rgba(0,0,0,0);
           border: none;
           border-bottom: 1px solid #d8d9db;
           font-size: 1rem;
@@ -378,3 +378,5 @@ main::before{
   z-index: -1; 
   content: "";
 }
+
+input{border-radius:none;}
