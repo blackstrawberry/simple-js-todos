@@ -299,24 +299,29 @@ main{
         }
       }
       div:nth-of-type(1){
-        input{
-          height: 29px;
-          background-color: rgba(0,0,0,0);
-          border: none;
+        .input-wrap{
           border-bottom: 1px solid #d8d9db;
-          font-size: 1rem;
-          color: #d8d9db;
-        }
-        input:focus{
-          outline: none;
-        }
-        .search-icon{
-          background-image:url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-search-white.png");
-          background-repeat: no-repeat;
-          width: 18px;
-          height: 22px;
-          margin-top: 9px;
-          border-bottom: 1px solid #d8d9db; 
+          width: 200px;
+          input{
+            height: 29px;
+            width: 180px;
+            background-color: rgba(0,0,0,0);
+            border: none;
+            font-size: 1rem;
+            color: #d8d9db;
+            border-radius: 0px;
+          }
+          input:focus{
+            outline: none;
+          }
+          .search-icon{
+            background-image:url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-search-white.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 18px;
+            height: 18px;
+            margin: 8px 8px 0 0;
+          }
         }
       }
       div:not(:nth-of-type(1)){

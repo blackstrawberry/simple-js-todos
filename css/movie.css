@@ -633,26 +633,32 @@ main .box-office-wrap .box-footer div .ticket-icon {
   margin-right: 8px;
 }
 
-main .box-office-wrap .box-footer div:nth-of-type(1) input {
-  height: 29px;
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
+main .box-office-wrap .box-footer div:nth-of-type(1) .input-wrap {
   border-bottom: 1px solid #d8d9db;
-  font-size: 1rem;
-  color: #d8d9db;
+  width: 200px;
 }
 
-main .box-office-wrap .box-footer div:nth-of-type(1) input:focus {
+main .box-office-wrap .box-footer div:nth-of-type(1) .input-wrap input {
+  height: 29px;
+  width: 180px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 1rem;
+  color: #d8d9db;
+  border-radius: 0px;
+}
+
+main .box-office-wrap .box-footer div:nth-of-type(1) .input-wrap input:focus {
   outline: none;
 }
 
-main .box-office-wrap .box-footer div:nth-of-type(1) .search-icon {
+main .box-office-wrap .box-footer div:nth-of-type(1) .input-wrap .search-icon {
   background-image: url("https://img.megabox.co.kr/static/pc/images/common/ico/ico-search-white.png");
   background-repeat: no-repeat;
+  background-size: contain;
   width: 18px;
-  height: 22px;
-  margin-top: 9px;
-  border-bottom: 1px solid #d8d9db;
+  height: 18px;
+  margin: 8px 8px 0 0;
 }
 
 main .box-office-wrap .box-footer div:not(:nth-of-type(1)) {
